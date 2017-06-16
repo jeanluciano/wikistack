@@ -15,7 +15,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: true })); // for HTML form submits
 app.use(bodyParser.json());
 
-app.use(express.static('/public'))
+app.use(express.static('./public'))
 app.use('/', makesRouter)
 
 
